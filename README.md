@@ -1,4 +1,4 @@
-# baseline-text-classifier-logreg
+# Baseline Text Classifier - LogReg
 Simple baseline text classifier using TF-IDF features and logistic regression.
 
 # Overview
@@ -9,26 +9,28 @@ Simple baseline text classifier using TF-IDF features and logistic regression.
 - Goal: Establish a clean, reproducible baseline
 
 # Project Structure
-baseline-text-classifier-logreg/ 
-├── README.md
-├── src/ 
-│ ├── predict.py # prediction script
-│ ├── train.py # main training script 
-│ └── utils.py # preprocessing helpers 
-└── requirements.txt
+baseline-text-classifier-logreg/  
+├── README.md  
+├── src/   
+│ ├── predict.py # prediction script  
+│ ├── train.py # main training script   
+│ └── utils.py # preprocessing helpers   
+└── requirements.txt  
 
 # How to Run
-pip install -r requirements.txt 
-python src/train.py
+```pip install -r requirements.txt ```  
+```python src/train.py```
 
 # Results (Output)
-Accuracy: 0.9056578947368421
-F1 Score: 0.9054772607107149
-Confusion Matrix: 
-[[1706 59 86 49] 
-[ 27 1849 16 8] 
-[ 67 18 1650 165] 
-[ 59 21 142 1678]]
+Accuracy: 0.9056578947368421  
+F1 Score: 0.9054772607107149  
+Confusion Matrix:   
+[[1706 59 86 49]   
+[ 27 1849 16 8]   
+[ 67 18 1650 165]   
+[ 59 21 142 1678]]  
 
-# Discussion
+# Discussion  
+<img width="523" height="131" alt="image" src="https://github.com/user-attachments/assets/c8925dd9-30e9-48b1-924e-4aa883f60ba7" />
+
 This model did well with sports, with an almost perfect classification. However, this model struggled with differentiating Business and Sci/Tech.
